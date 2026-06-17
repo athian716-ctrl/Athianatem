@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SDG 8 — Decent Work & Economic Growth</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1>SDG 8: Decent Work & Economic Growth</h1>
+        <p class="tag">Addressing youth unemployment with practical, measurable solutions.</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h2>The Problem</h2>
+        <p>
+          Youth unemployment and underemployment remain critical barriers to
+          sustainable economic growth. This demo shows a simple tool to estimate
+          job creation from investment and collect community proposals for
+          solutions like training, microfinance, and small-business support.
+        </p>
+      </section>
+
+      <section class="stats">
+        <h3>Quick Stats</h3>
+        <div class="cards">
+          <div class="card">
+            <strong>Global youth unemployment</strong>
+            <span>~13% (varies by region)</span>
+          </div>
+          <div class="card">
+            <strong>Informal employment</strong>
+            <span>~60% in developing regions</span>
+          </div>
+          <div class="card">
+            <strong>Typical training cost</strong>
+            <span>USD 2,000–8,000 per job</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="calculator">
+        <h3>Job Creation Calculator</h3>
+        <form id="calcForm">
+          <label>
+            Investment amount (USD)
+            <input type="number" id="investment" min="0" value="50000" />
+          </label>
+          <label>
+            Average cost per job (USD)
+            <input type="number" id="costPerJob" min="100" value="5000" />
+          </label>
+          <button type="submit">Estimate Jobs</button>
+        </form>
+        <div id="result" class="result" aria-live="polite"></div>
+      </section>
+
+      <section class="proposals">
+        <h3>Submit a Local Solution</h3>
+        <p>Share a short proposal for a program that could create decent work.</p>
+        <form id="proposalForm">
+          <label>
+            Your name (optional)
+            <input type="text" id="propName" placeholder="Name or org" />
+          </label>
+          <label>
+            Idea summary
+            <input type="text" id="propIdea" required placeholder="Short idea" />
+          </label>
+          <label>
+            Estimated cost per job (USD)
+            <input type="number" id="propCost" min="100" value="3000" />
+          </label>
+          <button type="submit">Submit Proposal</button>
+        </form>
+
+        <div id="proposalsList" class="proposal-list"></div>
+      </section>
+
+      <section class="resources">
+        <h3>Resources & Actions</h3>
+        <ul>
+          <li>Partner with local training providers.</li>
+          <li>Support microfinance and small enterprise grants.</li>
+          <li>Advocate for decent wages, safety nets, and formalization.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>Built for an SDG 8 demo — open source, simple tools for impact.</small>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
